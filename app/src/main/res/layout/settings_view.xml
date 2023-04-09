@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.authenticated.fragment.SettingsFragment"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+            <RelativeLayout
+                android:id="@+id/settingsTopLayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/settingsUserAvatar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/chat_avatar"
+                    android:src="@mipmap/default_avatar"
+                    android:clipToOutline="true"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/settingsUserAvatar"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:id="@+id/settingsUserDisplayName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_highlight_color"
+                        android:background="@drawable/settings_username_bg"
+                        android:paddingHorizontal="7.5dp"
+                        android:paddingVertical="1dp"
+                        android:layout_marginBottom="2.5dp"/>
+
+                    <TextView
+                        android:id="@+id/settingsUserRank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loading Rank..."
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_primary_text_color"
+                        android:layout_below="@id/settingsUserDisplayName"/>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/settingsLanguageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Language"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatMessageItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="5dp">
+    <ImageView
+        android:id="@+id/chatMessageUserAvatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/chat_avatar"
+        android:src="@mipmap/default_avatar"
+        android:clipToOutline="true"/>
+
+    <TextView
+        android:id="@+id/chatMessageUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chatMessageUserAvatar"
+        android:text="Username"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_chat_message_username"/>
+
+    <!-- BADGES -->
+
+    <TextView
+        android:id="@+id/chatMessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chatMessageUserAvatar"
+        android:layout_below="@id/chatMessageUserName"
+        android:text="..."
+        android:textSize="11dp"
+        android:textColor="@color/dark_chat_message_text"/>
+</RelativeLayout>

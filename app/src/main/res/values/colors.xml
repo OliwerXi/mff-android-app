@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="error_red">#FF2B2B</color>
+
+    <!-- DARK -->
+    <color name="dark_background_color">#282b30</color>
+    <color name="dark_nav_untoggled">#181A1E</color>
+    <color name="dark_nav_toggled">#121417</color>
+    <color name="dark_primary_text_color">#8BFFFFFF</color>
+    <color name="dark_placeholder_text_color">#4AFFFFFF</color>
+    <color name="dark_input_fill_color">#A6444851</color>
+    <color name="dark_input_border_color">#BE626875</color>
+    <color name="dark_input_label_color">#74767A</color>
+    <color name="dark_highlight_color">#1DAFED</color> <!-- #7289da -->
+    <color name="dark_chat_message_username">#898A8A</color>
+    <color name="dark_chat_message_text">#6D7275</color>
+</resources>

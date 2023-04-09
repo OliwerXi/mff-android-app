@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background_color"
+    tools:context=".ui.authenticated.AuthenticatedActivity">
+
+    <FrameLayout
+        android:id="@+id/pageFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigator"/>
+
+    <LinearLayout
+        android:id="@+id/navigator"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/chatNavbarButton"
+            style="@style/Theme.Mff.NavbarButton"
+            android:backgroundTint="@color/dark_nav_toggled"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetRight="0dp"
+            android:insetLeft="0dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Chat"/>
+
+        <Button
+            android:id="@+id/settingsNavbarButton"
+            style="@style/Theme.Mff.NavbarButton"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetRight="0dp"
+            android:insetLeft="0dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Settings"/>
+    </LinearLayout>
+</RelativeLayout>
